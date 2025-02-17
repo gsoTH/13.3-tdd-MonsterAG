@@ -20,5 +20,22 @@ namespace MonsterAG
                 throw new NotFiniteNumberException();
             }
         }
+
+        public int Size
+        {
+            get
+            {
+                throw new NotFiniteNumberException();
+            }
+            set
+            {
+                throw new NotFiniteNumberException();
+            }
+        }
+
+        public string Haunt()
+        {
+            throw new NotFiniteNumberException();
+        }
     }
 }

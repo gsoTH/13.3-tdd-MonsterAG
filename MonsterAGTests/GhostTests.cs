@@ -3,45 +3,50 @@ using MonsterAG;
 
 namespace MonsterAGTests
 {
-    [TestMethod]
-    public void Ghost_wirdKorrektErstellt()
+    [TestClass]
+    public class GhostTests
     {
-        // Arrange
-        string name = "Spooky";
 
-        // Act
-        Ghost ghost = new Ghost(name);
+        [TestMethod]
+        public void Ghost_wirdKorrektErstellt()
+        {
+            // Arrange
+            string name = "Spooky";
 
-        // Assert
-        Assert.AreEqual(name, ghost.Name);
-        Assert.AreEqual(0, ghost.Size);
-    }
+            // Act
+            Ghost ghost = new Ghost(name);
 
-    [TestMethod]
-    public void Size_KannGesetztWerden()
-    {
-        // Arrange
-        Ghost ghost = new Ghost("Spooky");
-        int size = 10;
+            // Assert
+            Assert.AreEqual(name, ghost.Name);
+            Assert.AreEqual(0, ghost.Size);
+        }
 
-        // Act
-        ghost.Size = size;
+        [TestMethod]
+        public void Size_KannGesetztWerden()
+        {
+            // Arrange
+            Ghost ghost = new Ghost("Spooky");
+            int size = 10;
 
-        // Assert
-        Assert.AreEqual(size, ghost.Size);
-    }
+            // Act
+            ghost.Size = size;
 
-    [TestMethod]
-    public void Haunt_ErzeugtAusgabe()
-    {
-        // Arrange
-        Ghost ghost = new Ghost("Spooky");
+            // Assert
+            Assert.AreEqual(size, ghost.Size);
+        }
 
-        // Act
-        string ausgabe = ghost.Haunt();
+        [TestMethod]
+        public void Haunt_ErzeugtAusgabe()
+        {
+            // Arrange
+            Ghost ghost = new Ghost("Spooky");
 
-        // Assert
-        Assert.AreEqual("Spooky sagt: 'Buh'", ausgabe);
+            // Act
+            string ausgabe = ghost.Haunt();
+
+            // Assert
+            Assert.AreEqual("Spooky sagt: 'Buh'", ausgabe);
+        }
     }
 }
-}
+
