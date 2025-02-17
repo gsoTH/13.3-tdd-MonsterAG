@@ -8,16 +8,20 @@ namespace MonsterAG
 {
     public class Ghost
     {
+        private string name;
+        private int size;
+
         public Ghost(string name)
         {
-            throw new NotFiniteNumberException();
+            this.name = name;
+            this.Size = 1;
         }
 
         public string Name
         {
             get
             {
-                throw new NotFiniteNumberException();
+                return this.name;
             }
         }
 
@@ -25,17 +29,17 @@ namespace MonsterAG
         {
             get
             {
-                throw new NotFiniteNumberException();
+                return size;
             }
             set
             {
-                throw new NotFiniteNumberException();
+                size = value;
             }
         }
 
-        public string Haunt()
+        public virtual string Haunt()
         {
-            throw new NotFiniteNumberException();
+            return name + " sagt: 'Buh'";
         }
     }
 }
