@@ -18,7 +18,7 @@ namespace MonsterAGTests
 
             // Assert
             Assert.AreEqual(name, ghost.Name);
-            Assert.AreEqual(0, ghost.Size);
+            Assert.AreEqual(1, ghost.Size);
         }
 
         [TestMethod]

@@ -40,9 +40,9 @@ namespace MonsterAGTests
 
             // Assert
             Assert.AreEqual(9, cannibalGhost.Size);
-            Assert.IsNull(ghostToEat);
-            Assert.IsNull(slimeGhostToEat);
-            Assert.IsNull(cannibalGhostToEat);
+            Assert.AreEqual(0, ghostToEat.Size);
+            Assert.AreEqual(0, slimeGhostToEat.Size);
+            Assert.AreEqual(0, cannibalGhostToEat.Size);
         }
 
 
