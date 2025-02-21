@@ -10,14 +10,14 @@ namespace MonsterAG
     {
         public Ghost(string name)
         {
-            throw new NotFiniteNumberException();
+            throw new NotImplementedException();
         }
 
         public string Name
         {
             get
             {
-                throw new NotFiniteNumberException();
+                throw new NotImplementedException()();
             }
         }
 
@@ -25,17 +25,17 @@ namespace MonsterAG
         {
             get
             {
-                throw new NotFiniteNumberException();
+                throw new NotImplementedException()();
             }
             set
             {
-                throw new NotFiniteNumberException();
+                throw new NotImplementedException()();
             }
         }
 
         public string Haunt()
         {
-            throw new NotFiniteNumberException();
+            throw new NotImplementedException()();
         }
     }
 }
