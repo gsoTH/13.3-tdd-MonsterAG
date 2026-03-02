@@ -17,7 +17,7 @@ namespace MonsterAG
         {
             get
             {
-                throw new NotImplementedException()();
+                throw new NotImplementedException();
             }
         }
 
@@ -25,17 +25,17 @@ namespace MonsterAG
         {
             get
             {
-                throw new NotImplementedException()();
+                throw new NotImplementedException();
             }
             set
             {
-                throw new NotImplementedException()();
+                throw new NotImplementedException();
             }
         }
 
         public string Haunt()
         {
-            throw new NotImplementedException()();
+            throw new NotImplementedException();
         }
     }
 }
