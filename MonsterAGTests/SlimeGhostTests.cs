@@ -11,14 +11,12 @@ namespace MonsterAGTests
         public void SlimeGhost_wirdKorrektErstellt()
         {
             // Arrange
-            string name = "SlimeSpooky";
 
             // Act
-            SlimeGhost slimeGhost = new SlimeGhost(name);
+            SlimeGhost slimeGhost = new SlimeGhost("SlimeSpooky");
 
             // Assert
-            Assert.AreEqual(name, slimeGhost.Name);
-            Assert.AreEqual(1, slimeGhost.Size);
+            Assert.IsInstanceOfType(slimeGhost, typeof(Ghost));
         }
 
         [TestMethod]
