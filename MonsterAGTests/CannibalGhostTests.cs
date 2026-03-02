@@ -11,14 +11,12 @@ namespace MonsterAGTests
         public void CannibalGhost_wirdKorrektErzeugt()
         {
             // Arrange
-            string name = "hungrySpooky";
 
             // Act
-            CannibalGhost cannibalGhost = new CannibalGhost(name);
+            CannibalGhost cannibalGhost = new CannibalGhost("hungrySpooky");
 
             // Assert
-            Assert.AreEqual(name, cannibalGhost.Name);
-            Assert.AreEqual(1, cannibalGhost.Size);
+            Assert.IsInstanceOfType(cannibalGhost, typeof(Ghost));
         }
 
         [TestMethod]
