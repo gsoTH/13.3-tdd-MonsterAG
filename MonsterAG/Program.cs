@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Uns interessieren die Tests, nicht die Program.cs ;) ");
+            Console.WriteLine("(Sie müssen den TestExplorer öffnen.)");
         }
     }
 }
